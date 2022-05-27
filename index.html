@@ -13110,9 +13110,38 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
+
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><p style = "background-color:   #e6d3e9;"> 
+<font color=#＃000000 size=5><b><br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #efdff1;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #e6e6fa;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #d0e4f1;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #b0d9c5;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #bedfcf;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #c4e3d4;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13213,10 +13242,11 @@ $</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b> 内部<br>
+<p><font color=#＃000000 size=5><b> 内点<br>
 <font color=#＃000000 size=4><b><br>
 $
-V是闭集当且仅当其补集是开集
+点x称为E的内点若\exists r&gt;0,使得B_r(x)\subset E(即B_r(x)\cap E^c = \varnothing)
+\\内点全体称为内部
 $</p>
 
 </div>
@@ -13225,14 +13255,201 @@ $</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b> 内部<br>
+<p><font color=#＃000000 size=5><b> 外点<br>
 <font color=#＃000000 size=4><b><br>
 $
-V是闭集当且仅当其补集是开集
+x称为E的外点若\exists r&gt;0,使得B_r(x) \subset E^c(即B_r(x)\cap E = \varnothing)
+\\外点全体称为外部
 $</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color=#＃000000 size=5><b> 边界点<br>
+<font color=#＃000000 size=4><b><br>
+$
+x称为E的边界点若\forall r&gt;0,有B_r(x)\cap E\neq \varnothing 且 B_r(x)\cap E^c\neq \varnothing 
+\\边界点全体称为边界，记为\partial E
+$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是一个度量空间，E \subset X
+\\1)X = Int(E)\cup Ext(E) \cup \partial E(无交并)
+\\2)Int(E)和Ext(E)都是X中开集,\partial E是X中闭集
+\\3)E\cup\partial E = Int(E)\cup \partial E = X \setminus  Ext(E) 是X 中闭集
+\\4)若K是X中闭集，且E \subset K，则E\cup\partial E \subset K(即E\cup \partial E是X中包含E的最小闭集)
+\\注：E是闭集当且仅当E = \overline E
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 闭包<br>
+<font color=#＃000000 size=4><b><br>
+$
+E的闭包:\overline E =   E\cup \partial E = Int(E)\cup \partial E = X \setminus Ext(E) 是包含E的最小闭集
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 点收敛<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是一个度量空间，称序列\left\{ x_n \right \}\subset X是收敛到某个x \in X的，若\mathop{lim}\limits_{n\rightarrow \infty}d(x_n,x) = 0.记作x_n\rightarrow x(n\rightarrow \infty)
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若f_n \rightarrow f 在(X,d)中，且f_n \rightarrow g在(X,d)中，则f=g 在空间X中
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 柯西列<br>
+<font color=#＃000000 size=4><b><br>
+$
+若(X,d)是一个度量空间，序列\left\{ x_n \right\}\subset X称为柯西列，若\forall \epsilon &gt;0,\exists  N \in \mathbb N ，使得\forall m,n &gt;0,有d(x_n,x_m)&lt;\epsilon
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若\left\{ x_n \right\}是在度量空间(X,d)是收敛的，则它一定是柯西列
+$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><p style = "background-color:   #e6e6fa;"> 
+<font color=#＃000000 size=6><b>Lecture 3<br>
+<font color=#＃000000 size=4><b><br>
+$
+$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color=#＃000000 size=5><b> 极限点<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，E\subset X,点x\in X称为是E的极限点,若\forall r&gt;0,\exists  y\in E,y\neq x,使得d(x,y)&lt;r
+\\即：\forall r&gt;0,E\cap (B_r(x)\setminus \left \{ x\right \})\neq \varnothing
+\\注：E的极限点不一定属于E
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 孤立点<br>
+<font color=#＃000000 size=4><b><br>
+$
+点x\in E称为E的孤立点，若\exists r&gt;0,使得E\cap (B_r(x)\setminus \left\{ x \right \}) = \varnothing
+\\即：\exists r&gt;0,使得E\cap B_r(x) = \left\{  x \right \}
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，E\subset X,则\overline E = E \cup E的所有极限点
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 推论<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，E\subset X，若x是E的极限点，则存在E中序列\left \{ x_n\right\} \subset E使得\mathop{lim}\limits_{n\rightarrow \infty} x_n = x,x_n\neq x,\forall n \in \mathbb N
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 映射下的极限点<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d),(Y,d')是度量空间，若存在映射f:X\rightarrow Y,a是E的极限点，则我们称\mathop{lim}\limits_{x\rightarrow a}f(x)=y
+\\当且仅当\forall \epsilon&gt;0, \exists \delta &gt;0 使得\forall x \in X,0&lt;d(x,a)&lt;\delta ,有d'(f(x),y)&lt;\epsilon
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 连续<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d),(Y,d')是度量空间，E\subset X,a\in E,函数（映射）f:E\rightarrow Y称为是在a点连续的
+\\若\forall \epsilon &gt;0,\exists \delta&gt;0，使得\forall x\in E,d(x,a)&lt;\delta ,有d'(f(x),f(a))&lt;\epsilon
+\\函数(映射)f:X\rightarrow Y称为是连续的，若\forall a \in X，a连续
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d),(Y,d')是度量空间，a\in E \subset X,函数（映射）f:E\rightarrow Y 是在a点连续的
+\\当且仅当\forall \left\{ x_n\right\}收敛到a,有\mathop{lim}\limits_{n\rightarrow \infty}f(x_n) = f(a)
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 局部有界定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，a\in E\subset X,f:E\rightarrow \mathbb R 在a点连续，则
+\\\Longrightarrow \exists \delta &gt; 0
+$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13262,6 +13479,11 @@ $</p>
 </div>
     </div>
   </div>
+<script type="text/javascript">
+
+!function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
+
+</script>
 </body>
 
  
