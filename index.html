@@ -13110,7 +13110,6 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
-
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13118,7 +13117,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><p style = "background-color:   #e6d3e9;"> 
-<font color=#＃000000 size=5><b><br><br>
+<font color=#＃000000 size=5><b> <br><br>
 <font color=#＃000000 size=4><b></p>
 <p><p style = "background-color:   #efdff1;"> 
 <font color=#＃000000 size=5><b> <br><br>
@@ -13136,6 +13135,15 @@ div#notebook {
 <font color=#＃000000 size=5><b> <br><br>
 <font color=#＃000000 size=4><b></p>
 <p><p style = "background-color:   #c4e3d4;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #bde5d2;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #c4e3d4;"> 
+<font color=#＃000000 size=5><b> <br><br>
+<font color=#＃000000 size=4><b></p>
+<p><p style = "background-color:   #ddeee6;"> 
 <font color=#＃000000 size=5><b> <br><br>
 <font color=#＃000000 size=4><b></p>
 
@@ -13181,7 +13189,7 @@ $
 \\①\forall x \in X，\Vert x\Vert \le 0.\Vert x\Vert = 0 当且仅当x=0
 \\②\Vert cx\Vert = \vert c\vert \vert  x\vert,\forall c\in R,x \in X
 \\③\Vert x+y\Vert \le \Vert x \Vert +\Vert y \Vert,\forall x,y \in X
-\\则d(x,y):=\Vert x-y\Vert ,forall x,y \in X 定义了一个在X上的度量
+\\则d(x,y):=\Vert x-y\Vert ,\forall x,y \in X 定义了一个在X上的度量
 \\
 2)X = R^n ,d_p(x,y) = (\sum\limits_{j=1}^n\vert x_j - y_j\vert^p)^\frac 1p,\forall x,y \in R^n
 \\当\le p \le \infty成立,但当0&lt;p&lt;1时不成立，因为三角不等式不满足
@@ -13361,7 +13369,7 @@ $
 (X,d)是度量空间，E\subset X,则\overline E = E \cup E的所有极限点
 $</p>
 <p><br><br>
-<font color=#＃000000 size=5><b> 推论<br>
+<font color=#＃000000 size=5><b> 命题<br>
 <font color=#＃000000 size=4><b><br>
 $
 (X,d)是度量空间，E\subset X，若x是E的极限点，则存在E中序列\left \{ x_n\right\} \subset E使得\mathop{lim}\limits_{n\rightarrow \infty} x_n = x,x_n\neq x,\forall n \in \mathbb N
@@ -13393,50 +13401,247 @@ $</p>
 <font color=#＃000000 size=4><b><br>
 $
 (X,d)是度量空间，a\in E\subset X,f:E\rightarrow \mathbb R 在a点连续，则
-\\\Longrightarrow \exists \delta &gt; 0
+\\\Longrightarrow \exists \delta &gt; 0,M&gt;0,使得\forall x\in B_\delta(a)，有\vert f(x)\vert\le M
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若f,g:E\rightarrow \mathbb R在a点连续，则f+g,f-g,f\cdot g都在a点连续.若g(a)\neq 0,则\frac fg 同样在a点连续
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 常见的连续函数<br>
+<font color=#＃000000 size=4><b><br>
+$
+1)利普希茨连续：函数f:(X,d)\rightarrow (Y,d)被称为是利普希茨连续的
+\\\quad若\exists C&gt;0,使得d'(f(x),f(a))\le Cd(x,a),\forall x,a\in X
+\\
+2)赫尔德连续：函数f:(X,d)\rightarrow (Y,d)称为是\alpha 次 赫尔德连续的
+\\\quad若d'(f(x),f(y)) \le Cd(x,y) ^\alpha ,\forall x,y \in X
+\\
+注：若f是利普希茨连续或\alpha 次 赫尔德连续的(0&lt;\alpha &lt;1)\Longrightarrow f是连续的
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 连续的等价定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若(X,d)和(Y,d')是度量空间，f:X\rightarrow Y.
+\\f是在X上是连续的\Leftrightarrow \forall U是Y中开集，f^{-1}(U) := \left\{ x\in X:f(x)\in U \right\} 是X中开集
 $</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color=#＃000000 size=5><b> 紧集<br>
+<font color=#＃000000 size=4><b><br>
+$
+E是紧的\Longleftrightarrow E的任何开覆盖都有有限子覆盖
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 命题<br>
+<font color=#＃000000 size=4><b><br>
+$
+紧急的闭子集还是紧的
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 推论<br>
+<font color=#＃000000 size=4><b><br>
+$
+R中的有界闭集都是紧集
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若K,K'是R中紧集\Longrightarrow K\times K'是R^2中紧集
+\\
+注：这可以推到可数个情形
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若f:(X,d)\longrightarrow (Y,d')是连续的且K\subset X是紧的
+\\\Longrightarrow f(K) = \left\{ y\in Y: y = f(x),x \in K  \right\}是紧的
+$</p>
 
-    </div>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><p style = "background-color:   #e6e6fa;"> 
+<font color=#＃000000 size=6><b>Lecture 4<br>
+<font color=#＃000000 size=4><b><br>
+$
+$</p>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若\exists \left \{  x_n  \right \} \subset E,\forall n, x_n \neq x, 使得\mathop{lim}\limits_{n\rightarrow \infty}x_n =x 
+\\\Longrightarrow x是E的极限点
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+若(X,d)是度量空间，E\subset X,则E的极限点组成的集合是X中闭集
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 海涅-柏莱尔定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+R中的有界闭集是紧集
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 博尔赞诺-魏尔斯特拉斯定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+实数空间中的有界数列必有收敛子列
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，E是X中紧集，则E是X中闭集
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，E是X中紧集，则E是有界的
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 推论<br>
+<font color=#＃000000 size=4><b><br>
+$
+在任何度量空间，紧集一定是有界闭集
+\\
+注:在\mathbb R^n: 紧集 \Leftrightarrow  有界闭集
+\\\space \space \quad 在普通度量空间: 有界闭集 \nRightarrow 紧集
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 列紧<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，E\subset X，E是列紧的\Longleftrightarrow E中的每个点列都有收敛到E中点的子列
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 定理<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间，E\subset X，则E是紧集当且仅当E是列紧的
+\\
+注：定理等价于E的每个开覆盖都有有限子覆盖\Longleftrightarrow E的每个点列都有收敛到E的子列
+$</p>
 
-    </div>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><p style = "background-color:   #e6e6fa;"> 
+<font color=#＃000000 size=6><b>Lecture 5<br>
+<font color=#＃000000 size=4><b><br>
+$
+$</p>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br><br>
+<font color=#＃000000 size=5><b> 柯西列<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是度量空间,点列\left\{  x_j \right\}_{j=1}^\infty \subset X被称为柯西列\Longleftrightarrow \forall \epsilon&gt;0 , \exists J \in N,使得j,j'\ge J,有d(x_j,x_j')&lt;\epsilon
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 完备<br>
+<font color=#＃000000 size=4><b><br>
+$
+度量空间(X,d)称为是完备的 \Longleftrightarrow X 中的每个柯西列都有在X中有极限
+\\注：即度量空间是完备的当且仅当每个柯西列都收敛
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 命题<br>
+<font color=#＃000000 size=4><b><br>
+$
+度量空间的柯西列是有界的
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 命题<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是完备的度量空间，Y\subset X,则(Y,d)是完备的当且仅当Y是X的闭子集
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 压缩映射原理（不动点理论）<br>
+<font color=#＃000000 size=4><b><br>
+$
+(X,d)是完备的度量空间，\mathscr T:X \rightarrow X 是一个压缩映射
+\\即\exists 0\le c \le 1，使得d(\mathscr Tx,\mathscr Ty)\le cd(x,y) \quad(\forall x,y \in X)
+\\\Longrightarrow \exists  唯一的 x_0 \in X使得 \mathscr T x_0 =x_0,x_0称为不动点
+$</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><p style = "background-color:   #ddeee6;"> 
+<font color=#＃000000 size=6><b>Lecture 6<br>
+<font color=#＃000000 size=4><b><br>
+$
+$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><p style = "background-color:   #e6e6fa;"> 
+<font color=#＃000000 size=6><b>Lecture 7<br>
+<font color=#＃000000 size=4><b><br>
+$
+$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color=#＃000000 size=5><b> 一致收敛<br>
+<font color=#＃000000 size=4><b><br>
+$
+\left \{ f_n \right\}_{n=1}^\infty是在E\subset R^n上的实值函数列,我们称\left \{ f_n \right\}_{n=1}^\infty在E上是一致收敛的
+\\\Longleftrightarrow \exists f:E\rightarrow R 使得\mathop{lim}\limits_{n\rightarrow \infty}\mathop{sup}\limits_{x \in E}\vert  f_n(x) - f(x) \vert  = 0
+$</p>
+<p><br><br>
+<font color=#＃000000 size=5><b> 迪尼定理<br>
+<font color=#＃000000 size=4><b><br>
+$</p>
+<p>$</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
