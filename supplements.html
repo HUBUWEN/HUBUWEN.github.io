@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>来自《泛函分析》孙炯的一些笔记（方便使用）</title>
+<title>来自《泛函分析》孙炯部分笔记</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13216,8 +13216,8 @@ $用自然语言叙述，A中的任意一点都可以由B中的点逼近$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><font color=#＃000000 size=5><b>   可分</p>
-<p><font color=#＃000000 size=4><b> $空间可分：对于空间X，存在X的\color{red}{可数稠密子集}，则称空间X是可分的$<br>
-$集合可分：对于A,B\subset X,若B是A的\color{red}{可数稠密子集}，则称集合A是可分的$</p>
+<p><font color=#＃000000 size=4><b> $空间可分：对于空间X，存在X的\color{purple}{可数稠密子集}，则称空间X是可分的$<br>
+$集合可分：对于A,B\subset X,若B是A的\color{purple}{可数稠密子集}，则称集合A是可分的$</p>
 
 </div>
 </div>
@@ -13324,7 +13324,7 @@ $1)\space\mathbb R^n是完备的距离空间\\
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><font color=#＃000000 size=5><b>   压缩映射定理（Banach不动点定理）</p>
-<p><font color=#＃000000 size=4><b> $在\color{red}{完备}距离空间中，若有d(\mathcal{T}x,\mathcal{T}y)\le \theta d(x,y)，其中0\lt\theta\lt1，则\mathcal{T}x=x存在唯一解x$</p>
+<p><font color=#＃000000 size=4><b> $在\color{purple}{完备}距离空间中，若有d(\mathcal{T}x,\mathcal{T}y)\le \theta d(x,y)，其中0\lt\theta\lt1，则\mathcal{T}x=x存在唯一解x$</p>
 
 </div>
 </div>
@@ -13333,7 +13333,7 @@ $1)\space\mathbb R^n是完备的距离空间\\
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><font color=#＃000000 size=5><b>   范数</p>
-<p><font color=#＃000000 size=4><b> $X是\color{red}{线性空间}，函数\Vert \cdot \Vert:X\longrightarrow \color{red}{\Bbb{R}}满足:$<br>
+<p><font color=#＃000000 size=4><b> $X是\color{purple}{线性空间}，函数\Vert \cdot \Vert:X\longrightarrow \color{purple}{\Bbb{R}}满足:$<br>
  $1)\space\forall x\in X，\Vert x \Vert &gt;0 \space(非负性)$<br>
  $2)\space \Vert x \Vert =0当且仅当x=0 \space(正定性)$<br>
  $3)\space \Vert \alpha x \Vert = \vert \alpha \vert \Vert x \Vert \space (正齐次性)$<br>
@@ -13566,6 +13566,51 @@ $(X,\Vert \cdot\Vert)是赋范空间，如果X完备，且级数\sum\limits_{k=1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+
+    <br><br>
+<style>
+      button {
+        display: inline-block;
+        background-color: #b0d9c5;
+        border-radius: 0px;
+        border: 1px double #b0d9c5;
+        color: #FFFFFF;
+        text-align: right;
+        font-size: 30px;
+        padding: 0px;
+        width: 0px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 0px;
+        opacity: 0.5;
+      }
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 1;
+        top: 0;
+<!--        right: -20px;-->
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: #ddeee6;
+      }
+      button:hover span {
+<!--        padding-right: 25px;-->
+      }
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+    </style>
+
+<button onclick="window.location.href='index.html'" type="button" >BACK</button>
 
 </div>
 </div>
