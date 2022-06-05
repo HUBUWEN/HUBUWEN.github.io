@@ -13137,7 +13137,7 @@ $</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   常见的距离空间</p>
+<p><font color=#＃000000 size=5><b>   常见的距离空间<br>
 <p><font color=#＃000000 size=4><b> 
 $1)欧式空间\mathbb{R^n}的欧式距离：\\x=(\xi_1,\xi_2,...),y=(\eta_1,\eta_2,...)，定义\\d(x,y)=(\sum_{k=1}^n\vert \xi_k-\eta_k\vert^2)^\frac12\\
 2)全体有界实数列l^\infty的距离：\\d(x,y)=\mathop{sup} \limits_{j\in N}\left \{ \vert  \xi_j-\eta_j  \vert \right \} \\
@@ -13152,7 +13152,7 @@ d(x,y)=\sum\limits_{k=1}^\infty \frac{1}{2^k}\frac{\vert \xi_k-\eta_k \vert}{1+\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   距离空间中收敛的含义</p>
+<p><font color=#＃000000 size=5><b>   距离空间中收敛的含义<br>
 <p><font color=#＃000000 size=4><b> 
 $ 1) 欧式空间:\mathbb R^m空间.x_n =(\xi_1^n ,\xi_x^n,...,\xi_m^n)(n=1,2,...),x= (\xi_1,\xi_2,...,\xi_m)\in \mathbb R^m,d(x_n,x)\rightarrow 0,即
   \\\sqrt{(\xi_1^n-\xi_1)^2 +(\xi_2^n -\xi_2)^2 +... + (\xi_m^n - \xi_m)^2} \rightarrow 0 \Leftrightarrow \xi_i^n \rightarrow \xi_i(n\rightarrow \infty) ,i=1,2...
@@ -13172,7 +13172,7 @@ $ 1) 欧式空间:\mathbb R^m空间.x_n =(\xi_1^n ,\xi_x^n,...,\xi_m^n)(n=1,2,..
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   定理 1.2.13</p>
+<p><font color=#＃000000 size=5><b>   定理 1.2.13<br>
 <p><font color=#＃000000 size=4><b> $设\mathcal{T}是从距离空间(x,d)到距离空间(x_1,d_1)的映射,则\mathcal{T}在x_0点连续,当且仅当lim_{xn}=x_0时,有lim\mathcal{T}(x_n)=\mathcal{T}(lim x_n)$<br>
 $注：定理表明若\mathcal{T}连续,则\mathcal{T}和极限可交换顺序$</p>
 
@@ -13189,13 +13189,16 @@ $注：定理表明若\mathcal{T}连续,则\mathcal{T}和极限可交换顺序$<
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   接触点</p>
+<p><font color=#＃000000 size=5><b>   接触点<br>
 <p><font color=#＃000000 size=4><b> $有一个集合A，有一个点x,若x的开球B(x,\epsilon)与A交集非空，则称x是集合A的接触点，公式表示为:$<br>
  $A\cap B(x,\epsilon)\neq \varnothing$</p>
-<p><font color=#＃000000 size=5><b>   聚点</p>
+    <br>
+<p><font color=#＃000000 size=5><b>   聚点<br>
+
 <p><font color=#＃000000 size=4><b> $有一个集合A，有一个点x,若x的开球B(x,\epsilon)/x与A除了x点以外交集非空，则称x是集合A的聚点，公式表示为:$ 
 $(A\setminus \left \{ x \right \} )\cap B(x,\epsilon)\neq \varnothing$</p>
-<p><font color=#＃000000 size=5><b>   闭包</p>
+    <br><br>
+<p><font color=#＃000000 size=5><b>   闭包<br>
 <p><font color=#＃000000 size=4><b> $集合A的接触点全体成为A的闭包$</p>
 
 </div>
@@ -13204,8 +13207,9 @@ $(A\setminus \left \{ x \right \} )\cap B(x,\epsilon)\neq \varnothing$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   稠密   <font color=#＃000000 size=4><b></p>
-<p>$称B在A中稠密,如果\overline{B}\supset A,等价于\forall x\in A.x\in\overline{B}，即x是B的接触点,即B\cap B(x,\epsilon)\neq \varnothing，即对于A中的任意一点x，\\在x的任意小邻域内总存在B中的点$<br>
+<p><font color=#＃000000 size=5><b>   稠密<br>
+    <p><font color=#＃000000 size=4><b>
+$称B在A中稠密,如果\overline{B}\supset A,等价于\forall x\in A.x\in\overline{B}，即x是B的接触点,即B\cap B(x,\epsilon)\neq \varnothing，即对于A中的任意一点x，\\在x的任意小邻域内总存在B中的点$<br>
 $用\epsilon-\delta语言叙述，\forall x \in A,\exists y\in B,使得d(x,y)&lt;\epsilon$<br>
 $用自然语言叙述，A中的任意一点都可以由B中的点逼近$</p>
 
@@ -13215,7 +13219,7 @@ $用自然语言叙述，A中的任意一点都可以由B中的点逼近$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   可分</p>
+<p><font color=#＃000000 size=5><b>   可分<br>
 <p><font color=#＃000000 size=4><b> $空间可分：对于空间X，存在X的\color{purple}{可数稠密子集}，则称空间X是可分的$<br>
 $集合可分：对于A,B\subset X,若B是A的\color{purple}{可数稠密子集}，则称集合A是可分的$</p>
 
@@ -13225,7 +13229,7 @@ $集合可分：对于A,B\subset X,若B是A的\color{purple}{可数稠密子集}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   可分的例子</p>
+<p><font color=#＃000000 size=5><b>   可分的例子<br>
 <p><font color=#＃000000 size=4><b> $1)\mathbb{C}[a,b]可分：由Werstrass定理，连续函数可由实系数多项式逼近，实系数多项式又可由有理系数多项式逼近，即有理\\系数多项式是\mathcal{C}[a,b]的可数稠密子集\\
  2)l^{\infty}不可分：取l^{\infty}中集合A,B为{0,1,0,1,1,1.....}的有界数列，A,B的势和\mathbb{R}的势相同\\
  3)空间s可分$</p>
@@ -13236,7 +13240,7 @@ $集合可分：对于A,B\subset X,若B是A的\color{purple}{可数稠密子集}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   列紧</p>
+<p><font color=#＃000000 size=5><b>   列紧<br>
 <p><font color=#＃000000 size=4><b> $集合的子列紧：集合A中的每个无穷点列都收敛子列，则称A是列紧的，特别的，称闭的列紧集为自列紧集\\
  空间的子列紧：空间X的每一个无穷点列都有收敛子列$<br>
  $推论：列紧集的子集也是列紧的$</p>
@@ -13247,7 +13251,7 @@ $集合可分：对于A,B\subset X,若B是A的\color{purple}{可数稠密子集}
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   定理 1.3.23</p>
+<p><font color=#＃000000 size=5><b>   定理 1.3.23<br>
 <p><font color=#＃000000 size=4><b> $A是距离空间中的集合，若A是列紧的，则A一定是有界的，证明用反证法$<br>
 $推论：自列紧集一定是有界闭集$</p>
 
@@ -13266,7 +13270,7 @@ $推论：自列紧集一定是有界闭集$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   Cauchy列</p>
+<p><font color=#＃000000 size=5><b>   Cauchy列<br>
 <p><font color=#＃000000 size=4><b></p>
 <p>$设(X,d)是一个距离空间，\left \{   x_n \right \}_{n=1}^\infty\subset(X,d)，若\forall \epsilon&gt;0,\exists 正整数N，当m,n&gt;N时，有d(x_n,x_m)&lt;\epsilon\\
 则称 \left \{   x_n \right \}_{n=1}^\infty是一个Cauchy列    $</p>
@@ -13287,7 +13291,7 @@ $收敛点列一定是Cauchy列 $</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   完备</p>
+<p><font color=#＃000000 size=5><b>   完备<br>
 <p><font color=#＃000000 size=4><b> $第一个等价定义：列紧的空间称为是完备的\\
  第二个等价定义：若距离空间(X,d)中任意Cauchy列都收敛，则称距离空间是完备的\\
  推论：完备的空间一定是闭的，因为一个集合是闭的当且仅当它的任何极限都在它里面$</p>
@@ -13298,8 +13302,8 @@ $收敛点列一定是Cauchy列 $</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   证明完备的常见思路</p>
-<p><font color=#＃000000 size=4><b><br>
+<p><font color=#＃000000 size=5><b>   证明完备的常见思路
+<p><font color=#＃000000 size=4><b>
 $1)\space 找出空间中的Cauchy列\left \{ x_n(t) \right \} ，找出Cauchy列的极限x(t) \\
  2)\space 证明x(t)\in 该空间\\
  3)证明x_n(t)\rightarrow x(t)(n\rightarrow \infty),按距离收敛$</p>
@@ -13310,7 +13314,7 @@ $1)\space 找出空间中的Cauchy列\left \{ x_n(t) \right \} ，找出Cauchy�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   常见的完备空间</p>
+<p><font color=#＃000000 size=5><b>   常见的完备空间<br>
 <p><font color=#＃000000 size=4><b> 
 $1)\space\mathbb R^n是完备的距离空间\\
 1.5)\space 更一般的\mathbb C同胚于R^2也是完备的\\
@@ -13323,7 +13327,7 @@ $1)\space\mathbb R^n是完备的距离空间\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   压缩映射定理（Banach不动点定理）</p>
+<p><font color=#＃000000 size=5><b>   压缩映射定理（Banach不动点定理）<br>
 <p><font color=#＃000000 size=4><b> $在\color{purple}{完备}距离空间中，若有d(\mathcal{T}x,\mathcal{T}y)\le \theta d(x,y)，其中0\lt\theta\lt1，则\mathcal{T}x=x存在唯一解x$</p>
 
 </div>
@@ -13332,7 +13336,7 @@ $1)\space\mathbb R^n是完备的距离空间\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   范数</p>
+<p><font color=#＃000000 size=5><b>   范数<br>
 <p><font color=#＃000000 size=4><b> $X是\color{purple}{线性空间}，函数\Vert \cdot \Vert:X\longrightarrow \color{purple}{\Bbb{R}}满足:$<br>
  $1)\space\forall x\in X，\Vert x \Vert &gt;0 \space(非负性)$<br>
  $2)\space \Vert x \Vert =0当且仅当x=0 \space(正定性)$<br>
@@ -13346,7 +13350,7 @@ $1)\space\mathbb R^n是完备的距离空间\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   范数的基本性质</p>
+<p><font color=#＃000000 size=5><b>   范数的基本性质<br>
 <p><font color=#＃000000 size=4><b> 
  $设(X,\Vert \cdot\Vert)是线性赋范空间，则\\
  1)\space \forall x,y\in X,有：\vert  \Vert y \Vert-  \Vert x \Vert\vert \le \Vert y-x\Vert\\
@@ -13363,7 +13367,7 @@ $1)\space\mathbb R^n是完备的距离空间\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   Banach空间</p>
+<p><font color=#＃000000 size=5><b>   Banach空间<br>
 <p><font color=#＃000000 size=4><b> $完备的赋范空间称Banach空间$</p>
 
 </div>
@@ -13372,7 +13376,7 @@ $1)\space\mathbb R^n是完备的距离空间\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   Holder不等式          Minkowski不等式</p>
+<p><font color=#＃000000 size=5><b>   Holder不等式          Minkowski不等式<br>
 <p><font color=#＃000000 size=4><b> 
 $1)\space 引理：若p,q&gt;0且\frac1p+\frac1q=1,则\forall a,b，有\vert ab\vert\le\frac{\vert a \vert^p}{p}+\frac{\vert b\vert^q}{q}\\
 2)\space holder不等式：设E是勒贝格可测集，x(t),y(t)是E上的可测函数，且\frac 1p+\frac1q=1,则有：\\
@@ -13386,8 +13390,8 @@ $1)\space 引理：若p,q&gt;0且\frac1p+\frac1q=1,则\forall a,b，有\vert ab\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   离散的Holder不等式          Minkowski不等式</p>
-<p><font color=#＃000000 size=4><b><br>
+<p><font color=#＃000000 size=5><b>   离散的Holder不等式          Minkowski不等式<br>
+<p><font color=#＃000000 size=4><b>
 $设\left \{ \xi_k \right \}\in l^p,\left \{ \eta_k \right \}\in l^q,\frac1p+\frac1q=1,则有：\\
 Holder不等式：\\
 \sum\limits_{k=1}^\infty\vert \xi_k\eta_k\vert dt \le(\sum\limits_{k=1}^\infty\vert \xi_k\vert^p)^\frac1p(\sum\limits_{k=1}^\infty\vert \eta_k\vert^q)^\frac1q\\
@@ -13401,7 +13405,7 @@ Minkowski不等式：\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   常见的范数</p>
+<p><font color=#＃000000 size=5><b>   常见的范数<br>
 <p><font color=#＃000000 size=4><b> 
 $1)\space闭区间上连续函数全体\mathbb C[a,b],定义范数：
 \Vert x  \Vert= \mathop{max}\limits_{a\le t\le b}\vert x(t)\vert，而且\mathbb C是一个完备可分的赋范空间\\
@@ -13434,12 +13438,12 @@ $当m(E)&lt;\infty时，如果1\le p2\le p2 \le \infty,则L^\infty(E)\subset L^{
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><font color=#＃000000 size=5><b>  凸集<br>
- <font color=#＃000000 size=4>
+ <p><font color=#＃000000 size=4>
  $1)\quad \mathbb R^n中的凸集：集合A\subset \mathbb R^n，若\forall x,y\in A，其连线也在A中，则称A是凸的。\\
  2)\quad 一般赋范空间的凸集：在线性空间X中，A\subset X，若\forall x,y\in A,\forall 0&lt;\alpha&lt;1，有\alpha x+(1-\alpha)y\in A，则称\\A是X中凸集。$<br>
  <br>
-<font color=#＃000000 size=5><b>  推论 
-<font color=#＃000000 size=4><b><br>
+<p><font color=#＃000000 size=5><b>  推论
+<font color=#＃000000 size=4><b><br><br>
 $1)\quad 两个凸集的交集是凸的。\\
 2)\quad 所有包含A的凸集的交集是凸集，这个凸集称为A的凸包，记为C_0(A),C_0(A)是包含A的最小凸集$</p>
 
@@ -13493,11 +13497,12 @@ $设(X,\Vert x \Vert)是赋范空间，X_0\subset X，X_0是X的真闭子空间�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font color=#＃000000 size=5><b>   代数上的同态</p>
+<p><font color=#＃000000 size=5><b>   代数上的同态<br>
 <p><font color=#＃000000 size=4><b> $给定群(G,\cdot)和群(H,\times),称集合G到集合H的一个映射\phi:G\rightarrow H是群G到H的一个同态映射，若\forall g_1,g_2\in G,\\有\phi(g_1\cdot g_2)=\phi(g_1)\times\phi(g_2)，记为G\sim  H$</p>
-<p><font color=#＃000000 size=5><b>   代数上的同构</p>
-<p><font color=#＃000000 size=4><b> $既单又满的同态映射吗，记为G\cong H$</p>
-<p><font color=#＃000000 size=5><b>   拓扑同胚</p>
+    <br>
+<p><font color=#＃000000 size=5><b>   代数上的同构<br>
+<p><font color=#＃000000 size=4><b> $既单又满的同态映射吗，记为G\cong H$<br><br>
+<p><font color=#＃000000 size=5><b>   拓扑同胚<br>
 <p><font color=#＃000000 size=4><b> 
 $1)f是双射\\
 2)f是连续的\\
@@ -13617,6 +13622,12 @@ $(X,\Vert \cdot\Vert)是赋范空间，如果X完备，且级数\sum\limits_{k=1
 </div>
     </div>
   </div>
+
+<script type="text/javascript">
+
+!function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
+
+</script>
 </body>
 
  
